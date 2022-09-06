@@ -6,10 +6,11 @@
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>50_projects</title>
 </head>
 <body>
 	<!--Start of Expanding Cards code-->
-	<div class="container">
+	<div class="container__cards">
 		<div class="panel active" style="background-image: url(img/glade.jpg)">
 			<h3>Glade</h3>
 		</div>
@@ -27,6 +28,24 @@
 		</div>
 	</div>
 	<!--End of Expanding Cards code-->
+
+	<!--Start of Progress Bar code-->
+	<div class="container__bar">
+		<div class="progress-container">
+			<div class="progress" id="progress"></div>
+			<div class="circle active">1</div>
+			<div class="circle">2</div>
+			<div class="circle">3</div>
+			<div class="circle">4</div>
+			<div class="circle">5</div>
+		</div>
+
+		<button class="btn" id="prev" disabled>Prev</button>
+		<button class="btn" id="next">Next</button>
+	</div>
+
+
+
 	<script src="js/script.js"></script>
 </body>
 </html>
