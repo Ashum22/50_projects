@@ -81,3 +81,17 @@ open.addEventListener('click', () => container.classList.add
 
 close.addEventListener('click', () => container.classList.remove
 ('show-nav'))
+
+// End of Rotated Navigatoin code
+
+// Start of Hidden Search Widget code
+
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn-search')
+const input = document.querySelector('.input')
+
+btn.addEventListener('click', () => {
+	search.classList.toggle('active')
+	input.focus()
+
+})

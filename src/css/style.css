@@ -4,6 +4,7 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #f6f7fb;
   font-family: 'Dancing Script', cursive;
@@ -32,7 +33,7 @@ body {
   flex: 0.5;
   margin: 10px;
   position: relative;
-  transition: flex 0.23s ease-in ;
+  transition: flex 0.23s ease-in;
 
 }
 
@@ -58,8 +59,9 @@ body {
   .container {
     width: 100vw;
   }
+
   /*Hide last 2 panel, if active*/
-  
+
   /* .panel:nth-of-type(4),
   .panel:nth-of-type(5) {
     display: none;
@@ -98,7 +100,7 @@ body {
   height: 4px;
   width: 100%;
   z-index: -1;
-  
+
 }
 
 .progress {
@@ -128,6 +130,7 @@ body {
 .circle.active {
   border-color: var(--line-border-fill);
 }
+
 .btn {
   background-color: var(--line-border-fill);
   color: #fff;
@@ -143,11 +146,13 @@ body {
 .btn:active {
   transform: scale(0.98);
 }
+
 .btn:focus {
   outline: 0;
 }
+
 .btn:disabled {
-  background-color:var(--line-border-empty);
+  background-color: var(--line-border-empty);
   cursor: not-allowed;
 }
 
@@ -170,11 +175,11 @@ body {
 }
 
 .container-rotated.show-nav {
-  transform: rotate(-20deg) ;
+  transform: rotate(-20deg);
 }
 
 .circle1 {
-  background-color: #ff7979 ;
+  background-color: #ff7979;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -216,7 +221,7 @@ body {
   transform-origin: top left;
 }
 
-.container-rotated.show-nav + nav li {
+.container-rotated.show-nav+nav li {
   transform: translateX(0);
   transition-delay: 0.3s;
 }
@@ -246,12 +251,12 @@ nav ul li i {
   margin-right: 10px;
 }
 
-nav ul li + li {
+nav ul li+li {
   margin-left: 15px;
   transform: translateX(-200%);
 }
 
-nav ul li + li + li {
+nav ul li+li+li {
   margin-left: 30px;
   transform: translateX(-200%);
 }
@@ -271,7 +276,7 @@ nav ul li + li + li {
 
 .content small {
   color: #555;
-  }
+}
 
 .content p {
   color: #333;
@@ -280,5 +285,59 @@ nav ul li + li + li {
 
 /* End of Rotated Navigation style*/
 
-/* Start of Rotated Navigation style*/
-  
+/* Start of Hidden Search Widget style*/
+.btn-search {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3 ease;
+}
+
+.btn-search:focus,
+.input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .btn-search {
+  transform: translateX(198px);
+}
+
+.btn-search img {
+  width: 10px;
+  height: 10px;
+}
+
+.container-search {
+  background-color: #ff7979;
+  width: 100vw;
+  display: flex;
+  }
+
+.search {
+  margin: 30px auto 30px auto;
+  position: relative;
+  /* height: 50px; */
+
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+/* End of Hidden Search Widget style*/
