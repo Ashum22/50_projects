@@ -11,12 +11,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  overflow: hidden;
+  height: 100%;
+  overflow-x: hidden;
   margin: 0;
 }
 
-.container__cards {
+.container-cards {
   display: flex;
   width: 90vw;
 }
@@ -75,7 +75,7 @@ body {
   --line-border-empty: #e8e8e8;
 }
 
-.container__bar {
+.container-bar {
   text-align: center;
 }
 
@@ -150,3 +150,135 @@ body {
   background-color:var(--line-border-empty);
   cursor: not-allowed;
 }
+
+/* End of Progress Bar style*/
+
+/* Start of Rotated Navigation style*/
+.body1 {
+  background-color: #333;
+  color: #222;
+}
+
+.container-rotated {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding-left: 40px;
+
+}
+
+.container-rotated.show-nav {
+  transform: rotate(-20deg) ;
+}
+
+.circle1 {
+  background-color: #ff7979 ;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.container-rotated.show-nav .circle1 {
+  transform: rotate(-70deg);
+}
+
+.circle1 button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 15px;
+  color: #fff;
+}
+
+.circle1 button:focus {
+  outline: none;
+}
+
+.circle1 button#open {
+  left: 15%;
+  top: 20%;
+  scale: 0.5;
+}
+
+.circle1 button#close {
+  left: 15%;
+  top: 45%;
+  scale: 0.2;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container-rotated.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  transform: translateX(-200%);
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.content h1 {
+  margin: 0;
+}
+
+.content small {
+  color: #555;
+  }
+
+.content p {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* End of Rotated Navigation style*/
+
+/* Start of Rotated Navigation style*/
+  
