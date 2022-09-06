@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&display=swap');
 
+/* Start of Expanding Cards code*/
 * {
   box-sizing: border-box;
 }
@@ -62,3 +63,5 @@ body {
     display: none;
   }
 }
+
+/* End of Expanding Cards code*/

@@ -1,3 +1,4 @@
+// Start of Expanding Cards code
 const panels = document.querySelectorAll('.panel')
 
 panels.forEach(panel => {
@@ -12,3 +13,4 @@ function removeActiveClasses() {
 		panel.classList.remove('active')
 	})
 }
+// End of Expanding Cards code
