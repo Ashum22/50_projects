@@ -341,3 +341,30 @@ nav ul li+li+li {
 }
 
 /* End of Hidden Search Widget style*/
+
+/* Start of Blurry Loading style */
+.bg {
+  background: url('https://images.unsplash.com/photo-1657837609620-e6902022764a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80')
+   no-repeat center center/cover;
+   left: -30px;
+   width: calc(100vw + 60px);
+   height: calc(100vh + 60px);
+   z-index: -1;
+   filter: blur(70px);
+}
+
+.loading-text {
+  /* display: block; */
+  position: absolute;
+  top:50%;
+  left:50%;
+  font-size: 50px;
+  color: white;
+  z-index: 1;
+   }
+
+.container-blure {
+  position: relative;
+}
+
+/* End of Blurry Loading style */
