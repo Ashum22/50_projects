@@ -149,3 +149,16 @@ function checkBoxes() {
 }
 
 // End of Scroll Animation code
+
+// Start of Split Landing Page code
+
+const left = document.querySelector('.left')
+const right = document.querySelector('.right')
+const containerr = document.querySelector('.container-split')
+
+left.addEventListener('mouseenter', () => containerr.classList.add('hover-left'))
+left.addEventListener('mouseleave', () => containerr.classList.remove('hover-left'))
+right.addEventListener('mouseenter', () => containerr.classList.add('hover-right'))
+right.addEventListener('mouseleave', () => containerr.classList.remove('hover-right'))
+
+// End of Split Landing Page code
