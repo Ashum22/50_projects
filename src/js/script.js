@@ -162,3 +162,45 @@ right.addEventListener('mouseenter', () => containerr.classList.add('hover-right
 right.addEventListener('mouseleave', () => containerr.classList.remove('hover-right'))
 
 // End of Split Landing Page code
+
+// Start of Styling The Form code
+
+const lables = document.querySelectorAll('.form-control label')
+
+lables.forEach(label => {
+	label.innerHTML = label.innerText
+		.split('')
+		.map((letter, idx) => `<span style="transition-delay:${idx * 50}ms">${letter}</span>`)
+		.join('')
+})
+
+// End of Styling The Form code
+
+// Start of Sound Board code
+
+const sounds = ['alarm', 'heartbeat', 'laugh', 'bleeps', 'fanfare', 'telephone', 'rain']
+
+sounds.forEach(sound => {
+	const btn = document.createElement('button')
+	btn.classList.add('btn')
+
+	btn.innerText = sound
+	btn.addEventListener('click', () => {
+		stopSongs()
+
+		document.getElementById(sound).play()
+	})
+
+	document.getElementById('buttons').
+	appendChild(btn)
+})
+
+function stopSongs() {
+	sounds.forEach(sound => {
+		const song = document.getElementById
+		(sound)
+
+		song.pause()
+		song.currentTime = 0;
+	})
+}
